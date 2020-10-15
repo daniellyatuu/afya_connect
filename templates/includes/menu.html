@@ -1,0 +1,81 @@
+<div id="wrapper" class="clearfix">
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="spinner">
+            <div class="preloader-speeding-wheel"></div>
+        </div>
+
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-top bg-theme-colored sm-text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="widget no-border m-0">
+                            <ul class="social-icons icon-dark icon-theme-colored icon-sm sm-text-center">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="widget no-border m-0">
+                            <ul class="list-inline pull-right flip sm-pull-none sm-text-center mt-5">
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-white"></i> <a
+                                        class="text-white" href="#">(+255)788 077-969</a> </li>
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-white"></i> <a
+                                        class="text-white" href="#">info@afyaconnect.co.tz</a> </li>
+                                <li class="sm-display-block mt-sm-10 mb-sm-10">
+                                    {% comment %}
+                                    <!-- Modal: Appointment Starts -->
+                                    <a class="bg-light p-5 text-theme-colored font-11 pl-10 pr-10" data-toggle="modal"
+                                        data-target="#BSParentModal" href="ajax-load/form-appointment.html">Make an
+                                        Appointment</a>
+                                    <!-- Modal: Appointment End -->
+                                    {% endcomment %}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        {% url 'home:home' as home_url %}
+        {% url 'home:about_us' as about_us %}
+        {% url 'home:team' as team %}
+        {% url 'home:blog' as blog %}
+        {% url 'home:contact_us' as contact_us %}
+        <div class="header-nav">
+            <div class="header-nav-wrapper navbar-scrolltofixed bg-lightest">
+                <div class="container">
+                    <nav id="menuzord-right" class="menuzord blue bg-lightest">
+                        <a class="menuzord-brand pull-left flip" href="<?=base_url();?>">
+                            <img src="<?=base_url('assets/images/afyaconnect.png'); ?>" alt="">
+                        </a>
+                        <ul class="menuzord-menu">
+                            <li class="{% if request.path == home_url %}active{% endif %}"><a
+                                    href="{% url 'home:home' %}">Home</a>
+                            </li>
+                            <li class="{% if request.path == about_us %}active{% endif %}"><a
+                                    href="{% url 'home:about_us' %}">About Us</a></li>
+                            <li class="{% if request.path == team %}active{% endif %}"><a
+                                    href="{% url 'home:team'  %}">Team</a></li>
+                            <!-- <li><a href="#">Gallery</a></li> -->
+                            <li class="{% if request.path == blog %}active{% endif %}"><a
+                                    href="{% url 'home:blog' %}">News &amp; updates</a>
+                            </li>
+
+                            <li class="{% if request.path == contact_us %}active{% endif %}"><a
+                                    href="{% url 'home:contact_us'  %}">Contact Us</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>

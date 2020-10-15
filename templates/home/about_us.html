@@ -1,0 +1,123 @@
+{% extends 'master/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<!-- Start main-content -->
+<div class="main-content">
+    <!-- Section: inner-header -->
+    <section class="inner-header divider layer-overlay overlay-deep"
+        data-bg-img=" {% static 'assets/images/bg/doctor_bg01.jpg' %}">
+        <div class="container pt-90 pb-50">
+            <!-- Section Content -->
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12 xs-text-center">
+                        <h3 class="font-28">About</h3>
+                        <ol class="breadcrumb white mt-10">
+                            <li><a href="{% url 'home:home'  %}">Home</a></li>
+                            <li class="active text-theme-colored">About</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container pb-0" style="padding-top: 10px;">
+            <div class="row">
+                <div class="col-md-8 wow fadeInUp animation-delay1">
+                    <h3 class="text-gray-silver font-playfair mt-10 mt-sm-30 mb-0">About</h3>
+                    <h1 class="text-gray font-playfair mt-0">Afya-connect</h1>
+                    <p class="mt-20 justify">
+                        Afya is a Swahili word which translates to health. Afyaconnect is an initiative to bring
+                        together resources and health care expertise for patients’ benefit and general improvement of
+                        quality of life.
+                        We use available resources at our disposal to address the sustainable development goal number 3
+                        to ensure health for all. Afyaconnect is focused on maternal and child health.
+                        The WHO shows that every two minutes a woman dies of pregnancy complication which most of them
+                        are preventable and that everyday about 15,000 children die before their fifth birthday. We are
+                        driven by this existing challenge and we are motivated to be a part of solution to attain good
+                        health for all.
+                        Our approach is to reach the community through public health education, outreach programs and
+                        empowering remote health care facilities. We also intend to use technology in addressing and
+                        solving pressing public health challenges with priority to pregnant women and children.
+                    </p>
+                </div>
+                <div class="col-md-4 wow fadeInRight animation-delay2">
+                    <img src="{% static 'assets/images/photos/doctor_asenga.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mission and vision .start -->
+    <section>
+        <div class="container">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="text-theme-colored title-border">Our Mission</h4>
+                        <p class="mb-20">We provide public health education, conduct outreach programs
+                            and empower remote health care centers through training and adoption of new
+                            health care technology.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-theme-colored title-border">Our Vission</h4>
+                        <p class="mb-20">Afyaconnect envisions the use of technology to provide
+                            health education and care services to all pregnant women and under-five
+                            children from skilled providers and efficient health care facilities in Tanzania.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- mission and vision ./end -->
+
+
+    {% comment %}
+    <!-- Section: funfact -->
+    <section class="divider parallax layer-overlay overlay-light" data-stellar-background-ratio="0.5"
+        data-bg-img="{% static 'assets/images/bg/bg1.jpg' %}">
+        <div class="container pt-120 pb-120">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                        <div class="funfact text-center">
+                            <a href="#"> <i class="icon-heart36 text-theme-colored font-60"></i></a>
+                            <h5 class="number text-theme-colored font-32">19100+</h5>
+                            <h6 class="title text-gray font-16">Happy Patients</h6>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                        <div class="funfact text-center">
+                            <a href="#"> <i class="icon-medical51 text-theme-colored font-60"></i></a>
+                            <h5 class="number text-theme-colored font-32">129</h5>
+                            <h6 class="title text-gray font-16">Qualified Doctors</h6>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                        <div class="funfact text-center">
+                            <a href="#"> <i class="icon_building text-theme-colored font-60"></i></a>
+                            <h5 class="number text-theme-colored font-32">850+</h5>
+                            <h6 class="title text-gray font-16">Clinic Rooms</h6>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                        <div class="funfact text-center">
+                            <a href="#"> <i class="icon_gift_alt text-theme-colored font-60"></i></a>
+                            <h5 class="number text-theme-colored font-32">456</h5>
+                            <h6 class="title text-gray font-16">Awards Won</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endcomment %}
+
+</div>
+<!-- end main-content -->
+{% endblock %}
