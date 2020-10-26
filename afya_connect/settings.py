@@ -128,4 +128,4 @@ STATIC_ROOT = BASE_DIR / 'assets'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
-print(MEDIA_ROOT)
+print('MEDIA_ROOT')
