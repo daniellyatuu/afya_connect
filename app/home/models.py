@@ -1,9 +1,11 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 
 class Posts(models.Model):
     title = models.CharField(max_length=500)
-    content = models.TextField()
+    content = RichTextField(blank=True, null=True)
+    # content = models.TextField()
     cover_photo = models.ImageField(upload_to='picture')
     active = models.BooleanField(default=True)
     date_posted = models.DateTimeField(auto_now_add=True)
