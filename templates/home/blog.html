@@ -42,7 +42,7 @@
                         <div class="entry-content border-1px p-20">
                             <h5 class="entry-title mt-0 pt-0"><a href="#">{{object.title}}</a></h5>
                             <p class="text-left mb-20 mt-15 font-13">
-                                {{ object.content|slice:":230" }}
+                                {{ object.content|safe|slice:":230" }}
                                 {% if object.content|length > 230 %}....{% endif %}
                             </p>
                             {% if object.content|length > 230 %}
