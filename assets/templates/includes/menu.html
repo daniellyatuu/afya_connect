@@ -1,3 +1,4 @@
+{% load static %}
 <div id="wrapper" class="clearfix">
     <!-- preloader -->
     <div id="preloader">
@@ -54,8 +55,8 @@
             <div class="header-nav-wrapper navbar-scrolltofixed bg-lightest">
                 <div class="container">
                     <nav id="menuzord-right" class="menuzord blue bg-lightest">
-                        <a class="menuzord-brand pull-left flip" href="<?=base_url();?>">
-                            <img src="<?=base_url('assets/images/afyaconnect.png'); ?>" alt="">
+                        <a class="menuzord-brand pull-left flip" href="{% url 'home:home'  %}">
+                            <img src="{% static 'assets/images/afyaconnect.png' %}" alt="">
                         </a>
                         <ul class="menuzord-menu">
                             <li class="{% if request.path == home_url %}active{% endif %}"><a
