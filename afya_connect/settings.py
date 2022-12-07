@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'wq%gxk9rz!ij+j*&)33c%_i^81#ev9e4q#epoie1k#4#307#qn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['147.182.249.144', '127.0.0.1', 'afyaconnect.co.tz', 'www.afyaconnect.co.tz']
+ALLOWED_HOSTS = ['143.110.157.109', '127.0.0.1', 'afyaconnect.co.tz', 'www.afyaconnect.co.tz']
 
 
 # Application definition
