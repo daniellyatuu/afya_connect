@@ -24,7 +24,7 @@ SECRET_KEY = 'wq%gxk9rz!ij+j*&)33c%_i^81#ev9e4q#epoie1k#4#307#qn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['139.59.141.150', '127.0.0.1', 'afyaconnect.co.tz', 'www.afyaconnect.co.tz']
+ALLOWED_HOSTS = ['142.93.110.155', '127.0.0.1', 'afyaconnect.co.tz', 'www.afyaconnect.co.tz']
 
 
 # Application definition
